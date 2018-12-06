@@ -1,0 +1,28 @@
+#title{
+   background-color: orange;
+   padding: 30px 10px 30px 10px;
+   width: 10%;
+   color: white;
+   font-size: 21px;
+}
+
+#Instructions{
+   width: 20%;
+   background-color: beige;
+   color: blue;
+   padding: 10px 10px 10px 10px;
+}
+
+#random{
+   width:20%;
+   background-color: darkgreen;
+   padding: 30px 10px 30px 10px;
+   color: darkmagenta;
+   display:inline-block
+}
+
+#Wins,#Losses,#WinsD,#LossesD{
+width: 5%;
+background-color: skyblue;
+color: blue;
+}
