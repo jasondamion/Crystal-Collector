@@ -4,7 +4,9 @@
     <title>Crystal Gatherer</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script defer src="assets/javascript/game.js"></script> 
+  </head>
 <body>
 <div class = "container">
 
@@ -28,6 +30,7 @@
          <h2 id = "Instructions">You win the game by matching your total points to the random number below. You lose if your total points go above the random number.</h2>
          <h2 id = "Instructions">The value of each crystal is hidden from you until you click on it.</h2>
          <h2 id = "Instructions">Each time the game starts, the value of the crystals will change.</h2>
+         <h2 id = "Instructions">Press any key to start</h2>
 
     </div>
 
@@ -42,8 +45,8 @@
 
         <h2 id = "random">0</h2>
 
-    </div>
-
+         </div>
+<br>
   <span>  <div class = "column col-md 2" display:inline-block> </span>
 
         <h2 id = "WinsD">Wins:</h2>    
@@ -51,15 +54,67 @@
         <h2 id = "LossesD">Losses:</h2>
         <h2 id = "Losses">0</h2>
 
-     </div>
+         </div>
     
+<br>
+
+  </div>
+
+  <div clas = "row">
+
+      <div class = "column col-md 1">
+
+        <input type="image" src="assets\images\Red-Crystal.jpg" name="saveForm" class="btTxt submit" id="Red-Crystal" height="75" width="75" />
+
+      </div>
+
+      <div class = "column col-md 1">
+
+        <input type="image" src="assets\images\Blue-Crystal.jpg" name="saveForm" class="btTxt submit" id="Blue-Crystal" height="75" width="75"/>
+
+      </div>
+      
+      <div class = "column col-md 1">
+
+        <input type="image" src="assets\images\Yellow-Crystal.jpg" name="saveForm" class="btTxt submit" id="Yellow-Crystal" height="75" width="75"/>
+
+      </div>
+
+      <div class = "column col-md 1">
+
+        <input type="image" src="assets\images\Green-Crystal.jpg" name="saveForm" class="btTxt submit" id="Green-Crystal" height="75" width="75"/>
+
+      </div>
+<br>
+  </div>
+<br>
+<br>
+  <div class = "row">
+
+       <div class = "column col-md 4">
+
+      <h2 id = "totalScoreText">Your total score is: </h2>
+       
+       </div>
+
+
+
+  </div>
+  <br>
+
+  <div class = "row">
+
+     <div class = "column col-md 2">
+
+     <h2 id = "totalScore">0</h2>
+
+     </div>
 
 
   </div>
 
 
 </div>
-
-<script src="game.js"></script>   
+ 
 </body>
 </html>
