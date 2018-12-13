@@ -24,8 +24,14 @@ $( "#Red-Crystal" ).click(function() {
     console.log(crysNumR);
     console.log("totalscore: " + totalScore)
     $("#totalScore").text(totalScore);
-    $("#Wins").text(countWin);
-$("#Losses").text(countLoss);
+    if(totalScore === ran){
+        countWin++;
+        $("#Wins").text(countWin);
+    }
+    if(totalScore > ran){
+        countLoss++;
+      $("#Losses").text(countLoss);
+    }
 });
 
 $( "#Blue-Crystal" ).click(function() {
@@ -33,8 +39,14 @@ $( "#Blue-Crystal" ).click(function() {
     console.log(crysNumB);
     console.log("totalscore: " + totalScore)
     $("#totalScore").text(totalScore);
-    $("#Wins").text(countWin);
-$("#Losses").text(countLoss);
+    if(totalScore === ran){
+        countWin++;
+        $("#Wins").text(countWin);
+    }
+    if(totalScore > ran){
+        countLoss++;
+      $("#Losses").text(countLoss);
+    }
   });
 
   $( "#Yellow-Crystal" ).click(function() {
@@ -42,8 +54,15 @@ $("#Losses").text(countLoss);
     console.log(crysNumY)
     console.log("totalscore: " + totalScore)
     $("#totalScore").text(totalScore);
-    $("#Wins").text(countWin);
-$("#Losses").text(countLoss);
+
+    if(totalScore === ran){
+        countWin++;
+        $("#Wins").text(countWin);
+    }
+    if(totalScore > ran){
+        countLoss++;
+      $("#Losses").text(countLoss);
+    }
 });
 
 $( "#Green-Crystal" ).click(function() {
@@ -51,8 +70,14 @@ $( "#Green-Crystal" ).click(function() {
     console.log(crysNumG)
     console.log("totalscore: " + totalScore)
     $("#totalScore").text(totalScore);
-    $("#Wins").text(countWin);
-    $("#Losses").text(countLoss);
+    if(totalScore === ran){
+        countWin++;
+        $("#Wins").text(countWin);
+    }
+    if(totalScore > ran){
+        countLoss++;
+      $("#Losses").text(countLoss);
+    }
 });
 
 if(totalScore === ran){
