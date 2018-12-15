@@ -27,10 +27,12 @@ $( "#Red-Crystal" ).click(function() {
     if(totalScore === ran){
         countWin++;
         $("#Wins").text(countWin);
+        alert("You Win")
     }
     if(totalScore > ran){
         countLoss++;
       $("#Losses").text(countLoss);
+      alert("You Lost")
     }
 });
 
@@ -42,10 +44,12 @@ $( "#Blue-Crystal" ).click(function() {
     if(totalScore === ran){
         countWin++;
         $("#Wins").text(countWin);
+        alert("You Win")
     }
     if(totalScore > ran){
         countLoss++;
       $("#Losses").text(countLoss);
+      alert("You Lost")
     }
   });
 
@@ -58,10 +62,12 @@ $( "#Blue-Crystal" ).click(function() {
     if(totalScore === ran){
         countWin++;
         $("#Wins").text(countWin);
+        alert("You Win")
     }
     if(totalScore > ran){
         countLoss++;
       $("#Losses").text(countLoss);
+      alert("You Lost")
     }
 });
 
@@ -73,23 +79,14 @@ $( "#Green-Crystal" ).click(function() {
     if(totalScore === ran){
         countWin++;
         $("#Wins").text(countWin);
+        alert("You Win")
     }
     if(totalScore > ran){
         countLoss++;
       $("#Losses").text(countLoss);
+      alert("You Lost")
     }
 });
 
-if(totalScore === ran){
-    countWin++;
-}
-if(totalScore > ran){
-    countLoss++;
-
-}
-$("#random").text(ran);
-$("#totalScore").text(totalScore);
-$("#Wins").text(countWin);
-$("#Losses").text(countLoss);
 
 }
